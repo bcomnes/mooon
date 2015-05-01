@@ -1,0 +1,27 @@
+{
+  "name": "mooon",
+  "description": "Displays the moon phase in your staus bar/tray",
+  "version": "1.0.0",
+  "author": "Bret Comnes <bcomnes@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/bcomnes/mooon/issues"
+  },
+  "devDependencies": {
+    "standard": "*",
+    "tap-spec": "*",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/bcomnes/mooon",
+  "keywords": [
+    "moon"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcomnes/mooon.git"
+  },
+  "scripts": {
+    "test": "tape test/*.js | tap-spec && standard"
+  }
+}
