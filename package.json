@@ -7,6 +7,7 @@
     "url": "https://github.com/bcomnes/mooon/issues"
   },
   "devDependencies": {
+    "electron-prebuilt": "^0.25.2",
     "standard": "*",
     "tap-spec": "*",
     "tape": "^4.0.0"
@@ -22,6 +23,7 @@
     "url": "https://github.com/bcomnes/mooon.git"
   },
   "scripts": {
-    "test": "tape test/*.js | tap-spec && standard"
+    "test": "tape test/*.js | tap-spec && standard",
+    "start": "electron index.js"
   }
 }
