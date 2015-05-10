@@ -25,5 +25,9 @@
   "scripts": {
     "test": "tape test/*.js | tap-spec && standard",
     "start": "electron index.js"
+  },
+  "dependencies": {
+    "moonmoji": "0.0.5",
+    "suncalc": "^1.6.0"
   }
 }

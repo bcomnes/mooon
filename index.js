@@ -21,9 +21,10 @@ app.on('window-all-closed', function () {
 // initialization and ready for creating browser windows.
 app.on('ready', function () {
   if (app.dock) app.dock.hide()
-  appIcon = new Tray('./193Template.png')
+  var phase = suncalc.getMoonIllumination(date).phase
+  appIcon = new Tray('./Icon.png')
   var contextMenu = Menu.buildFromTemplate([
-    { label: 'Item1', type: 'radio' },
+    { label: phase, type: 'radio' },
     { label: 'Item2', type: 'radio' },
     { label: 'Item3', type: 'radio', checked: true },
     { label: 'Item4', type: 'radio'}
@@ -31,16 +32,16 @@ app.on('ready', function () {
   appIcon.setToolTip('This is my application.')
   appIcon.setContextMenu(contextMenu)
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  // mainWindow = new BrowserWindow({width: 800, height: 600})
 
   // and load the index.html of the app.
-  mainWindow.loadUrl('file://' + __dirname + '/index.html')
+  // mainWindow.loadUrl('file://' + __dirname + '/index.html')
 
-  // Emitted when the window is closed.
-  mainWindow.on('closed', function () {
-    // Dereference the window object, usually you would store windows
-    // in an array if your app supports multi windows, this is the time
-    // when you should delete the corresponding element.
-    mainWindow = null
-  })
+// Emitted when the window is closed.
+// mainWindow.on('closed', function () {
+// Dereference the window object, usually you would store windows
+// in an array if your app supports multi windows, this is the time
+// when you should delete the corresponding element.
+// mainWindow = null
+// })
 })
