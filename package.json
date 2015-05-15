@@ -7,7 +7,8 @@
     "url": "https://github.com/bcomnes/mooon/issues"
   },
   "devDependencies": {
-    "electron-prebuilt": "^0.25.2",
+    "electron-packager": "^4.0.2",
+    "electron-prebuilt": "^0.26.0",
     "standard": "*",
     "tap-spec": "*",
     "tape": "^4.0.0"
@@ -24,10 +25,12 @@
   },
   "scripts": {
     "test": "tape test/*.js | tap-spec && standard",
-    "start": "electron index.js"
+    "start": "electron index.js",
+    "package": "electron-packager ./ Mooon --platform=darwin --arch=x64 --version=0.26.0",
+    "package-future": "electron-packager . Mooon --icon=static/AppIcon.icns"
   },
   "dependencies": {
     "moonmoji": "0.0.5",
-    "suncalc": "^1.6.0"
+    "node-schedule": "^0.2.6"
   }
 }
