@@ -35,7 +35,7 @@ app.on('ready', function () {
   var contextMenu = Menu.buildFromTemplate([
     {
       label: 'Quit',
-      accelerator: 'Command+Q',
+      accelerator: 'CommandOrControl+Q',
       click: function () { app.quit() }
     }
   ])
