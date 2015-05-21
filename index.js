@@ -1,5 +1,4 @@
 var app = require('app')  // Module to control application life.
-var BrowserWindow = require('browser-window')
 var Tray = require('tray')
 var Menu = require('menu')
 var moonmoji = require('moonmoji')
@@ -19,7 +18,6 @@ var phases = {
   'Waning Crescent': '196'
 }
 
-var mainWindow = null
 var appIcon = null
 
 // This method will be called when Electron has done everything
