@@ -9,10 +9,12 @@ require('crash-reporter').start()
 
 var phases = {
   'New Moon': '189',
+  'New Moon *': '189',
   'Waxing Crescent': '190',
   'First Quarter': '191',
   'Waxing Gibbous': '192',
   'Full Moon': '193',
+  'Full Moon *': '193',
   'Waning Gibbous': '194',
   'Last Quarter': '195',
   'Waning Crescent': '196'
