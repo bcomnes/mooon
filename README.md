@@ -9,6 +9,8 @@
 [travis-image]: https://img.shields.io/travis/bcomnes/mooon.svg?style=flat-square
 [travis-url]: https://travis-ci.org/bcomnes/mooon
 
+![](screenshot.png)
+
 Displays the moon phase in your staus bar/tray
 
 ## Install
