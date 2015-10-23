@@ -17,6 +17,8 @@
 
 Displays the moon phase in your staus bar/tray
 
+Builds fine.  Still working on a packaging workflow.
+
 ## Install
 
 ```
