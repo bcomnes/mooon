@@ -8,9 +8,9 @@
   },
   "devDependencies": {
     "electron-packager": "^5.1.0",
-    "electron-prebuilt": "^0.32.3",
-    "standard": "*",
-    "tap-spec": "*",
+    "electron-prebuilt": "^0.34.3",
+    "standard": "^5.3.1",
+    "tap-spec": "^4.1.0",
     "tape": "^4.0.0"
   },
   "homepage": "https://github.com/bcomnes/mooon",
@@ -27,6 +27,7 @@
     "test": "tape test/*.js | tap-spec && standard",
     "start": "electron index.js",
     "package": "electron-packager ./ Mooon --platform=darwin --arch=x64 --version=0.26.0",
+    "build:linux": "electron-packager ./ Mooon --platform=linux --arch=x64 --version=0.34.3",
     "package-future": "electron-packager . Mooon --icon=static/AppIcon.icns"
   },
   "dependencies": {
@@ -34,6 +35,6 @@
     "electron-packager": "^5.1.0",
     "electron-prebuilt": "^0.32.3",
     "moonmoji": "0.0.5",
-    "node-schedule": "^0.2.6"
+    "node-schedule": "^0.3.0"
   }
 }
